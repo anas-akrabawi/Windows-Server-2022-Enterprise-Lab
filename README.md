@@ -131,6 +131,8 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 <img width="852" height="563" alt="8) IT Group   its Members" src="https://github.com/user-attachments/assets/fd4f09b9-aeb3-4e20-aa1b-dba387b8d75f" />
 
 <br>
+
+
 ## Enterprise Group Policies
 
 * Security hardening
