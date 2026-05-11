@@ -44,9 +44,10 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 | Domain Controller | DC01            |
 | DC IP Address     | 192.168.10.10   |
 
-# 🏗️ Architecture Image
+## Architecture Image
 <img width="1536" height="1024" alt="Project Architecture" src="https://github.com/user-attachments/assets/5ae91fa8-1337-48bd-80e6-c04e8d2e3afc" />
 
+<br>
 ---
 
 # 🧠 Implemented Technologies
@@ -114,18 +115,19 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 * Organizational Unit structure
 * User and group management
 
+<br>
 <img width="1020" height="585" alt="2 2) Domain Name" src="https://github.com/user-attachments/assets/394aa91d-b6e3-4d1b-b77d-e763cc0ad501" />
 
-
+<br>
 <img width="1366" height="699" alt="2 6) Successfully Configured Domain Controller" src="https://github.com/user-attachments/assets/227d956f-66e9-4dc8-9e2b-6880f1d56132" />
 
-
+<br>
 <img width="813" height="551" alt="5) OUs structure" src="https://github.com/user-attachments/assets/5f951bd5-4174-47a3-a0a8-5177c26f57bc" />
-
+<br>
 
 <img width="852" height="563" alt="8) IT Group   its Members" src="https://github.com/user-attachments/assets/fd4f09b9-aeb3-4e20-aa1b-dba387b8d75f" />
 
-
+<br>
 ## Enterprise Group Policies
 
 * Security hardening
@@ -133,24 +135,24 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 * Centralized policy enforcement
 
 <img width="1019" height="551" alt="8) GPO list in GPMC" src="https://github.com/user-attachments/assets/ab957537-4971-4f8d-8428-7de6bd0356e6" />
-
+<br>
 ## File Server Implementation
 
 * Department-based shared folders
 * NTFS permission layering
 * Quotas and file restrictions
-
+<br>
 <img width="934" height="513" alt="1) Folder structure inside Shares Folder" src="https://github.com/user-attachments/assets/b9067675-d662-4226-8d54-0f9712da9e27" />
 
-
+<br>
 <img width="957" height="539" alt="2) IT Folder -  IT Users NTFS Persmissions" src="https://github.com/user-attachments/assets/330fd258-98cf-4fab-94a9-b5d0e08a6099" />
 
-
+<br>
 <img width="1084" height="498" alt="11 1) Copying Process has failed because of the Quota limit" src="https://github.com/user-attachments/assets/edac5aab-e7d6-4208-a72d-10f7ce69e081" />
 
-
+<br>
 <img width="1063" height="491" alt="12 3) Copying the mp4 video file is failed becuase a file screen blocks mp4 file types" src="https://github.com/user-attachments/assets/9fd3ff75-2a8b-4768-a6fb-875a773ed702" />
-
+<br>
 
 ## Real Troubleshooting Scenarios
 
@@ -158,7 +160,7 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 * Resolved GPO wallpaper deployment issues
 * Fixed DNS misconfiguration problems
 * Restored file share access through NTFS troubleshooting
-
+<br>
 <img width="572" height="322" alt="1) CL01 IP Configuration" src="https://github.com/user-attachments/assets/b093b5f5-c52b-4b5e-bcb9-b9c9b393fae1" />
 
 <br> 
@@ -167,13 +169,13 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 
 <br>
 <img width="1029" height="551" alt="8" src="https://github.com/user-attachments/assets/2fe90cc3-7689-40d4-b0f9-08296c5a4a3b" />
-
+<br>
 <img width="1366" height="721" alt="1) Ticket - HR user unable to access shared drive" src="https://github.com/user-attachments/assets/913b9dd3-9be7-4d4d-ad26-b7afe8ae4633" />
-
+<br>
 <img width="1366" height="704" alt="1 2) Ticket - HR user unable to access shared drive" src="https://github.com/user-attachments/assets/a3d795e0-eecf-46e2-9943-757f347e05c9" />
-
+<br>
 <img width="960" height="583" alt="1 8) Ticket - HR user unable to access shared drive" src="https://github.com/user-attachments/assets/50fe59f8-5b14-44a6-9f2a-ddde51850b6c" />
-
+<br>
 ---
 
 # 🎯 Skills Demonstrated
