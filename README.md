@@ -45,6 +45,8 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 | DC IP Address     | 192.168.10.10   |
 
 ## Architecture Image
+
+<br>
 <img width="1536" height="1024" alt="Project Architecture" src="https://github.com/user-attachments/assets/5ae91fa8-1337-48bd-80e6-c04e8d2e3afc" />
 
 <br>
