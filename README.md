@@ -44,8 +44,6 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 | Domain Controller | DC01            |
 | DC IP Address     | 192.168.10.10   |
 
----
-
 # 🏗️ Architecture Image
 <img width="1536" height="1024" alt="Project Architecture" src="https://github.com/user-attachments/assets/5ae91fa8-1337-48bd-80e6-c04e8d2e3afc" />
 
@@ -125,9 +123,6 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 <img width="813" height="551" alt="5) OUs structure" src="https://github.com/user-attachments/assets/5f951bd5-4174-47a3-a0a8-5177c26f57bc" />
 
 
-<img width="824" height="551" alt="5 1) Users in IT OU" src="https://github.com/user-attachments/assets/6bfea17e-b879-49d1-88d4-617130e33d32" />
-
-
 <img width="852" height="563" alt="8) IT Group   its Members" src="https://github.com/user-attachments/assets/fd4f09b9-aeb3-4e20-aa1b-dba387b8d75f" />
 
 
@@ -138,10 +133,6 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 * Centralized policy enforcement
 
 <img width="1019" height="551" alt="8) GPO list in GPMC" src="https://github.com/user-attachments/assets/ab957537-4971-4f8d-8428-7de6bd0356e6" />
-
-
-<img width="1064" height="610" alt="5) Block USB Storage policy settings" src="https://github.com/user-attachments/assets/ee371bc7-f3de-4b16-8058-4cd456c9b070" />
-
 
 ## File Server Implementation
 
@@ -170,27 +161,16 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 
 <img width="572" height="322" alt="1) CL01 IP Configuration" src="https://github.com/user-attachments/assets/b093b5f5-c52b-4b5e-bcb9-b9c9b393fae1" />
 
+<br> 
 
 <img width="1366" height="704" alt="10 9) CL01 Desktop Wallpaper" src="https://github.com/user-attachments/assets/5c1d4804-57cf-4cb1-8166-56722d4798ff" />
 
-
-<img width="1366" height="703" alt="7 1) Only thing worked was to manually set as desktop wallpaper for every domain user  in corp_lab" src="https://github.com/user-attachments/assets/1878c47e-daef-4751-bc58-9574d74f5800" />
-
-
-<img width="1079" height="576" alt="4" src="https://github.com/user-attachments/assets/8cc15065-59a9-44a3-9ec3-abbe3864c612" />
-
-
-<img width="1088" height="546" alt="7" src="https://github.com/user-attachments/assets/b212042b-4622-4eaa-a193-d7a207a6bf55" />
-
-
+<br>
 <img width="1029" height="551" alt="8" src="https://github.com/user-attachments/assets/2fe90cc3-7689-40d4-b0f9-08296c5a4a3b" />
-
 
 <img width="1366" height="721" alt="1) Ticket - HR user unable to access shared drive" src="https://github.com/user-attachments/assets/913b9dd3-9be7-4d4d-ad26-b7afe8ae4633" />
 
-
 <img width="1366" height="704" alt="1 2) Ticket - HR user unable to access shared drive" src="https://github.com/user-attachments/assets/a3d795e0-eecf-46e2-9943-757f347e05c9" />
-
 
 <img width="960" height="583" alt="1 8) Ticket - HR user unable to access shared drive" src="https://github.com/user-attachments/assets/50fe59f8-5b14-44a6-9f2a-ddde51850b6c" />
 
