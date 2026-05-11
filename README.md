@@ -141,6 +141,8 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 * User environment standardization
 * Centralized policy enforcement
 
+
+<br>
 <img width="1019" height="551" alt="8) GPO list in GPMC" src="https://github.com/user-attachments/assets/ab957537-4971-4f8d-8428-7de6bd0356e6" />
 <br>
 
