@@ -46,6 +46,11 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 
 ---
 
+# 🏗️ Architecture Image
+<img width="1536" height="1024" alt="Project Architecture" src="https://github.com/user-attachments/assets/5ae91fa8-1337-48bd-80e6-c04e8d2e3afc" />
+
+---
+
 # 🧠 Implemented Technologies
 
 ## Identity & Infrastructure
@@ -89,11 +94,7 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 * Missing mapped drives
 
 ---
----
-# 🏗️ Architecture Image
-<img width="1536" height="1024" alt="Project Architecture" src="https://github.com/user-attachments/assets/5ae91fa8-1337-48bd-80e6-c04e8d2e3afc" />
 
----
 # 📚 Project Phases
 
 * [Phase 1 — Architecture & Base Installation](./Phase-1-Architecture)
