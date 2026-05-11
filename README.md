@@ -48,7 +48,9 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 <img width="1536" height="1024" alt="Project Architecture" src="https://github.com/user-attachments/assets/5ae91fa8-1337-48bd-80e6-c04e8d2e3afc" />
 
 <br>
+
 ---
+
 
 # 🧠 Implemented Technologies
 
@@ -115,6 +117,7 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 * Organizational Unit structure
 * User and group management
 
+
 <br>
 <img width="1020" height="585" alt="2 2) Domain Name" src="https://github.com/user-attachments/assets/394aa91d-b6e3-4d1b-b77d-e763cc0ad501" />
 
@@ -136,11 +139,15 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 
 <img width="1019" height="551" alt="8) GPO list in GPMC" src="https://github.com/user-attachments/assets/ab957537-4971-4f8d-8428-7de6bd0356e6" />
 <br>
+
+
 ## File Server Implementation
 
 * Department-based shared folders
 * NTFS permission layering
 * Quotas and file restrictions
+
+
 <br>
 <img width="934" height="513" alt="1) Folder structure inside Shares Folder" src="https://github.com/user-attachments/assets/b9067675-d662-4226-8d54-0f9712da9e27" />
 
@@ -154,12 +161,15 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 <img width="1063" height="491" alt="12 3) Copying the mp4 video file is failed becuase a file screen blocks mp4 file types" src="https://github.com/user-attachments/assets/9fd3ff75-2a8b-4768-a6fb-875a773ed702" />
 <br>
 
+
 ## Real Troubleshooting Scenarios
 
 * Diagnosed DHCP failures causing APIPA addressing
 * Resolved GPO wallpaper deployment issues
 * Fixed DNS misconfiguration problems
 * Restored file share access through NTFS troubleshooting
+
+
 <br>
 <img width="572" height="322" alt="1) CL01 IP Configuration" src="https://github.com/user-attachments/assets/b093b5f5-c52b-4b5e-bcb9-b9c9b393fae1" />
 
@@ -176,7 +186,11 @@ The environment was intentionally designed under hardware constraints (8 GB RAM 
 <br>
 <img width="960" height="583" alt="1 8) Ticket - HR user unable to access shared drive" src="https://github.com/user-attachments/assets/50fe59f8-5b14-44a6-9f2a-ddde51850b6c" />
 <br>
+
+
+
 ---
+
 
 # 🎯 Skills Demonstrated
 
