@@ -1,4 +1,4 @@
-<img width="1366" height="704" alt="10 9) CL01 Desktop Wallpaper" src="https://github.com/user-attachments/assets/a567e60e-0b39-4183-9088-d929eb802ed8" /># 🏢 Windows Server 2022 Enterprise Lab
+# 🏢 Windows Server 2022 Enterprise Lab
 
 ## 📌 Project Overview
 
