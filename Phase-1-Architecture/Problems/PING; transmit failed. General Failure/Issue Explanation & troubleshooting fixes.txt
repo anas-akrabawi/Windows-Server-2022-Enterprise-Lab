@@ -1,0 +1,257 @@
+Here is your **final merged version**—cleaned, logically structured, no redundancy, and suitable for GitHub or interviews:
+
+---
+
+# 🧠 Incident Summary: DHCP Failure Causing APIPA Assignment
+
+## 📌 Title
+
+**Clients Unable to Obtain IP Address – DHCP Not Available (APIPA Assigned)**
+
+---
+
+## 📍 Environment
+
+* Hypervisor: VirtualBox
+* Network Type: Internal Network (`CorpNet`)
+* Subnet: `192.168.10.0/24`
+* Server: `DC01` → `192.168.10.10` (Static)
+* Clients: `CL01`, `CL02` (DHCP expected)
+
+---
+
+## ⚠️ Problem Description
+
+Client machines failed to obtain IP addresses automatically and initially could not communicate with the domain controller. The issue required validation at the **client network layer** to determine whether the root cause was DHCP, adapter configuration, or network stack failure.
+
+---
+
+# 🔍 Symptoms Observed
+
+### On Clients (`CL01`, `CL02`):
+
+#### 1. APIPA Address Assigned
+
+```bash
+169.254.x.x
+```
+
+#### 2. DHCP Renewal Failure
+
+```bash
+ipconfig /renew
+```
+
+Error:
+
+```
+Unable to contact your DHCP server. Request has timed out.
+```
+
+#### 3. Initial Connectivity Failure
+
+```bash
+ping 192.168.10.10
+```
+
+Error:
+
+```
+PING: transmit failed. General failure
+```
+
+---
+
+# 🧪 Diagnostic Approach
+
+## 1️⃣ Initial IP Configuration Check
+
+```bash
+ipconfig
+```
+
+This step determines the client’s network state. Three possible cases were considered:
+
+---
+
+### 🟥 Case A: Media Disconnected
+
+```text
+Media State . . . . . . . . . . : Media disconnected
+```
+
+**Meaning:**
+
+* Network adapter is disabled or not connected
+
+**Resolution:**
+
+* Enable adapter via:
+
+```bash
+ncpa.cpl
+```
+
+* Verify VirtualBox settings:
+
+  * Attached to: `Internal Network`
+  * Name: `CorpNet`
+
+---
+
+### 🟨 Case B: APIPA Address (Observed Case)
+
+```text
+IPv4 Address: 169.254.x.x
+Subnet Mask: 255.255.0.0
+```
+
+**Meaning:**
+
+* DHCP request failed
+* System assigned Automatic Private IP Address (APIPA)
+
+---
+
+### 🟥 Case C: No Network Adapter Detected
+
+```text
+Windows IP Configuration
+
+No adapters found
+```
+
+**Meaning:**
+
+* OS cannot detect network interface
+
+**Resolution:**
+
+* Set adapter type in VirtualBox:
+
+  * **Intel PRO/1000 MT Desktop (82540EM)**
+* Reinstall/update driver if needed
+
+---
+
+## 2️⃣ DHCP Validation
+
+```bash
+ipconfig /renew
+```
+
+Result:
+
+* DHCP server unreachable → confirms no DHCP service available
+
+---
+
+## 3️⃣ Network Isolation via Static IP
+
+To isolate DHCP from network functionality, static IPs were assigned:
+
+```text
+IP Address: 192.168.10.20 / 192.168.10.21  
+Subnet Mask: 255.255.255.0  
+DNS: 192.168.10.10
+```
+
+---
+
+## 4️⃣ Connectivity Test
+
+```bash
+ping 192.168.10.10
+```
+
+Result:
+
+* ✅ Successful
+
+---
+
+# 🧠 Root Cause
+
+* No DHCP server configured in the environment (expected in Phase 1)
+* Clients defaulted to APIPA range:
+
+```text
+169.254.0.0/16
+```
+
+### Additional Insight:
+
+* “General failure” ping error indicates packets were not leaving the client, typically due to **invalid IP state or temporary network stack inconsistency**
+
+---
+
+# ✅ Resolution
+
+* Assigned static IP addresses to clients
+* Verified successful communication with `DC01`
+* Confirmed network infrastructure is functioning correctly
+
+### Planned Permanent Fix:
+
+* Deploy DHCP role on `DC01`
+* Configure scope:
+
+```
+192.168.10.100 – 192.168.10.200
+```
+
+---
+
+# 🔁 Verification
+
+* ✅ CL01 → DC01 ping successful
+* ✅ CL02 → DC01 ping successful
+* ✅ Internal network communication fully operational
+
+---
+
+# 📚 Key Takeaways
+
+* APIPA (`169.254.x.x`) = DHCP failure indicator, not total network failure
+* “Media disconnected” = adapter or connection issue
+* “No adapter found” = driver or virtualization problem
+* “General failure” = local network stack / invalid configuration issue
+* Static IP assignment is the **fastest method to isolate DHCP vs network problems**
+
+---
+
+# 📸 Suggested GitHub Evidence
+
+Include:
+
+* `ipconfig` showing APIPA
+* DHCP renewal failure
+* Static IP configuration
+* Successful ping result
+
+---
+
+# 🎯 Professional Value
+
+This scenario demonstrates:
+
+* Structured troubleshooting using case-based analysis
+* Understanding of DHCP vs static addressing
+* Ability to isolate issues across network layers
+* Real-world diagnostic methodology used in IT support roles
+
+---
+
+# ✅ Status
+
+✔ Issue diagnosed and resolved
+✔ Network validated
+✔ Ready for Active Directory deployment
+
+---
+
+When ready:
+
+👉 **"Phase 1 complete"**
+
+Next: **Phase 2 — Active Directory + OU Design + PowerShell automation**
